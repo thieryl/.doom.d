@@ -39,7 +39,7 @@
   (toggle-frame-maximized)
   )
 
-(setq doom-font (font-spec :family "Source Code Pro" :size 16)
+(setq doom-font (font-spec :family "Source Code Pro" :size 20)
       doom-big-font (font-spec :family "Source Code Pro" :size 18)
       doom-variable-pitch-font (font-spec :family "Source Code Pro" :size 24)
       doom-serif-font (font-spec :family "Source Code Pro" :weight 'light))
@@ -53,6 +53,7 @@
 ;;   `require' or `use-package'.
 ;; - `map!' for binding new keys
 ;;
+(global-set-key [f8] 'neotree-toggle)
 ;; To get information about any of these functions/macros, move the cursor over
 ;; the highlighted symbol at press 'K' (non-evil users must press 'C-c c k').
 ;; This will open documentation for it, including demos of how they are used.

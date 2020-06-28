@@ -37,12 +37,27 @@
 
 (if (eq initial-window-system 'x)
   (toggle-frame-maximized)
+  (toggle-frame-fullscreen)
   )
 
-(setq doom-font (font-spec :family "Source Code Pro" :size 20)
+(setq doom-font (font-spec :family "Source Code Pro" :size 18)
       doom-big-font (font-spec :family "Source Code Pro" :size 18)
-      doom-variable-pitch-font (font-spec :family "Source Code Pro" :size 24)
-      doom-serif-font (font-spec :family "Source Code Pro" :weight 'light))
+      doom-variable-pitch-font (font-spec :family "Source Code Pro" :size 16)
+      doom-serif-font (font-spec :family "Source Code Pro" :weight 'light)
+      projectile-project-search-path '("~/play/")
+      )
+;;(setq-default header-line-format
+;;             (list " " (make-string 79 ?-) "|"))
+;;
+;;
+;; Prefix of C-x
+(global-set-key (kbd "C-x k") 'my-kill-buffer)
+(global-set-key (kbd "C-x K") 'my-kill-buffer-and-jump)
+(global-set-key (kbd "C-x O") 'my-prev-window)
+(global-set-key (kbd "C-x c") 'magit-clone)
+(global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "C-x t") 'turn-on-fci-mode)
+
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one

@@ -177,3 +177,5 @@
        :config
        ;;literate
        (default +bindings +smartparens))
+
+(add-to-list 'default-frame-alist '(fullscreen . maximized))

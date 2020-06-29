@@ -30,6 +30,7 @@
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
+(setq org-agenda-files (quote ("~/play/org")
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -68,6 +69,7 @@
 ;;   `require' or `use-package'.
 ;; - `map!' for binding new keys
 ;;
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 (global-set-key [f8] 'neotree-toggle)
 ;; To get information about any of these functions/macros, move the cursor over
 ;; the highlighted symbol at press 'K' (non-evil users must press 'C-c c k').

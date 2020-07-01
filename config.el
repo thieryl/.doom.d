@@ -52,12 +52,6 @@
 ;;
 ;;
 ;; Prefix of C-x
-(global-set-key (kbd "C-x k") 'my-kill-buffer)
-(global-set-key (kbd "C-x K") 'my-kill-buffer-and-jump)
-(global-set-key (kbd "C-x O") 'my-prev-window)
-(global-set-key (kbd "C-x c") 'magit-clone)
-(global-set-key (kbd "C-x g") 'magit-status)
-(global-set-key (kbd "C-x t") 'turn-on-fci-mode)
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
@@ -71,6 +65,13 @@
 ;;
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 (global-set-key [f8] 'neotree-toggle)
+(global-set-key (kbd "C-x k") 'my-kill-buffer)
+(global-set-key (kbd "C-x K") 'my-kill-buffer-and-jump)
+(global-set-key (kbd "C-x O") 'my-prev-window)
+(global-set-key (kbd "C-x c") 'magit-clone)
+(global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "C-x t") 'turn-on-fci-mode)
+(global-set-key (kbd "C-x s") 'eshell)
 ;; To get information about any of these functions/macros, move the cursor over
 ;; the highlighted symbol at press 'K' (non-evil users must press 'C-c c k').
 ;; This will open documentation for it, including demos of how they are used.

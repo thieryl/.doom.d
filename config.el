@@ -48,34 +48,12 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
-(setq org-todo-keywords nil)
-
-(setq org-todo-keywords
-      '(
-        (sequence "IDEA(i)" "TODO(t)" "STARTED(s)" "NEXT(n)" "WAITING(w)" "|" "DONE(d!)")
-        (sequence "|" "CANCELED(c!)" "DELEGATED(l)" "SOMEDAY(f)")
-        ))
-
-(setq org-todo-keyword-faces
-      '(("IDEA" . (:foreground "GoldenRod" :weight bold))
-        ("NEXT" . (:foreground "IndianRed1" :weight bold))
-        ("STARTED" . (:foreground "OrangeRed" :weight bold))
-        ("WAITING" . (:foreground "coral" :weight bold))
-        ("CANCELED" . (:foreground "LimeGreen" :weight bold))
-        ("DELEGATED" . (:foreground "LimeGreen" :weight bold))
-        ("SOMEDAY" . (:foreground "LimeGreen" :weight bold))
-        ))
-
-(global-set-key [f8] 'treemacs-mode)
-(global-set-key (kbd "C-x k") 'my-kill-buffer)
-(global-set-key (kbd "C-x K") 'my-kill-buffer-and-jump)
-(global-set-key (kbd "C-x O") 'my-prev-window)
-(global-set-key (kbd "C-x c") 'magit-clone)
-(global-set-key (kbd "C-x g") 'magit-status)
-(global-set-key [f12] 'fci-mode)
-
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
+;; Load custom org configuration
+(setq-default custom-file (expand-file-name 'org-custom.el' doom-private-dir))
+(when (file-exists-p custom-file)
+  (load custom-file))
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;

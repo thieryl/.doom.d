@@ -174,5 +174,5 @@
        ;;(rss +org)        ; emacs as an RSS reader
        ;;twitter           ; twitter client https://twitter.com/vnought
        :config
-       ;;literate
+       literate
        (default +bindings +smartparens))

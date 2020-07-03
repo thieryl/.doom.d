@@ -34,3 +34,4 @@
   :recipe (:host github :repo "Fuco1/org-pretty-table") :pin "88380f865a...")
 (package! ox-gfm :pin "99f93011b0...")
 (package! systemd :pin "51c148e09a...")
+(package! emms)

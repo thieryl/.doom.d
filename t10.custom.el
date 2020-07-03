@@ -96,11 +96,11 @@
     (setq emms-player-list '(emms-player-mpd))
     (setq emms-info-functions '(emms-info-mpd))
     (setq emms-player-mpd-server-name "localhost")
-    (setq emms-player-mpd-server-port "6601")
+    (setq emms-player-mpd-server-port "6600")
   :bind
-    ("s-m p" . emms)
-    ("s-m b" . emms-smart-browse)
-    ("s-m r" . emms-player-mpd-update-all-reset-cache)
+    ("C-x p" . emms)
+    ("C-x b" . emms-smart-browse)
+    ("C-x r" . emms-player-mpd-update-all-reset-cache)
     ("<XF86AudioPrev>" . emms-previous)
     ("<XF86AudioNext>" . emms-next)
     ("<XF86AudioPlay>" . emms-pause)
@@ -117,7 +117,7 @@
   (emms-player-mpd-connect)
   (emms-cache-set-from-mpd-all)
   (message "MPD Started!"))
-(global-set-key (kbd "C-m c") 'mpd/start-music-daemon)
+(global-set-key [f4] 'mpd/start-music-daemon)
 
 ;; Kill the Music Daemon
 (defun mpd/kill-music-daemon ()
@@ -126,7 +126,7 @@
   (emms-stop)
   (call-process "killall" nil nil nil "mpd")
   (message "MPD Killed!"))
-(global-set-key (kbd "C-m k") 'mpd/kill-music-daemon)
+(global-set-key [f5] 'mpd/kill-music-daemon)
 
 ;; Update the music database
 (defun mpd/update-database ()
@@ -134,4 +134,4 @@
   (interactive)
   (call-process "mpc" nil nil nil "update")
   (message "MPD Database Updated!"))
-(global-set-key (kbd "C-m u") 'mpd/update-database)
+(global-set-key [f6] 'mpd/update-database)

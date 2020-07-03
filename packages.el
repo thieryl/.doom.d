@@ -27,3 +27,10 @@
 ;;(package! deft)
 (package! notdeft :recipe (:host github :repo "hasu/notdeft"))
 (package! emacs-powerthesaurus :recipe (:host github :repo "SavchenkoValeriy/emacs-powerthesaurus"))
+(package! prettify-utils ; simplify messing with prettify-mode
+  :recipe (:host github :repo "Ilazki/prettify-utils.el") :pin "8b783d316c...")
+(package! flyspell-lazy :pin "3ebf68cc9e...")
+(package! org-pretty-table-mode
+  :recipe (:host github :repo "Fuco1/org-pretty-table") :pin "88380f865a...")
+(package! ox-gfm :pin "99f93011b0...")
+(package! systemd :pin "51c148e09a...")

@@ -37,7 +37,7 @@
       doom-variable-pitch-font (font-spec :family "Source Code Pro" :size 16)
       doom-serif-font (font-spec :family "Source Code Pro" :weight 'light)
       projectile-project-search-path '("~/play/")
-      +doom-dashboard-banner-file (expand-file-name "emacs3.png" doom-private-dir)
+      +doom-dashboard-banner-file (expand-file-name "emacs2.png" doom-private-dir)
       )
 
 ;; If you use `org' and don't want your org files in the default location below,
@@ -50,10 +50,6 @@
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-;; Load custom org configuration
-(setq-default custom-file (expand-file-name ".custom.el" doom-private-dir))
-(when (file-exists-p custom-file)
-  (load custom-file))
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
@@ -71,3 +67,9 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+
+;; Load custom org configuration
+(setq-default custom-file (expand-file-name ".custom.el" doom-private-dir))
+(when (file-exists-p custom-file)
+  (load custom-file))

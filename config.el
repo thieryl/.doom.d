@@ -73,3 +73,6 @@
 (load! "t10.custom.el" doom-private-dir)
 (load! "keybr.custom.el" doom-private-dir)
 (load! "org-mode.custom.el" doom-private-dir)
+
+;;(custom-set-faces
+;; '(doom-modeline-buffer-modified ((t (:foreground "orange")))))

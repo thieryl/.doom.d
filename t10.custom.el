@@ -17,7 +17,7 @@
 (setq +ivy-buffer-preview t)
 
 (custom-set-faces!
-  '(doom-modeline-buffer-modified :foreground "blue"))
+  '(doom-modeline-buffer-modified :foreground "orange"))
 
 (after! treemacs
   (defvar treemacs-file-ignore-extensions '()

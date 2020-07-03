@@ -72,3 +72,4 @@
 ;; Load custom org configuration
 (load! "t10.custom.el" doom-private-dir)
 (load! "keybr.custom.el" doom-private-dir)
+(load! "org-mode.custom.el" doom-private-dir)

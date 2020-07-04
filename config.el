@@ -75,6 +75,7 @@
 (load! "org-mode.custom.el" doom-private-dir)
 (load! "org-bullets.el" doom-private-dir)
 (load! "yt-dl.el" doom-private-dir)
+(load! "magithub.el" doom-private-dir)
 
 ;;(custom-set-faces
 ;; '(doom-modeline-buffer-modified ((t (:foreground "orange")))))

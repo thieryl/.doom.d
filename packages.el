@@ -36,3 +36,4 @@
 (package! systemd :pin "51c148e09a...")
 (package! emms)
 (package! magithub)
+(package! org-reveljs)

@@ -1,3 +1,5 @@
+
+(load! "org-bullets.el" doom-private-dir)
 (setq org-todo-keywords
       '((sequence "IDEA(i)" "TODO(t)" "STARTED(s)" "NEXT(n)" "WAITING(w)" "|" "DONE(d!)")
         (sequence "|" "CANCELED(c!)" "DELEGATED(l)" "SOMEDAY(f)")
@@ -22,9 +24,8 @@
   :config(add-hook 'org-mode-hook (lambda() (org-bullets-mode 1))))
 
 (let* ((variable-tuple
-        (cond ((x-list-fonts "ETBembo")         '(:font "ETBembo"))
-              ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
-              ((x-list-fonts "Lucida Grande")   '(:font "Lucida Grande"))
+        (cond ((x-list-fonts "NovoMono")         '(:font "NovoMono"))
+              ((x-list-fonts "Profont")   '(:font "Profont"))
               ((x-list-fonts "Verdana")         '(:font "Verdana"))
               ((x-family-fonts "Sans Serif")    '(:family "Sans Serif"))
               (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))

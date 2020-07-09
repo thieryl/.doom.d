@@ -35,7 +35,7 @@
 (package! ox-gfm :pin "99f93011b0...")
 (package! systemd :pin "51c148e09a...")
 (package! emms)
-(package! magithub)
+(package! forge)
 (package! ox-reveal)
 (package! ox-hugo)
 (package! org-bullets)

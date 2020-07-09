@@ -74,7 +74,7 @@
 (load! "keybr.custom.el" doom-private-dir)
 (load! "org-mode.custom.el" doom-private-dir)
 (load! "org-bullets.el" doom-private-dir)
-(load! "yt-dl.el" doom-private-dir)
+;;(load! "yt-dl.el" doom-private-dir)
 (load! "magithub.el" doom-private-dir)
 (load! "reveal.js.el" doom-private-dir)
 

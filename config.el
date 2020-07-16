@@ -58,7 +58,7 @@
   (toggle-frame-fullscreen)
   )
 
-(setq doom-font (font-spec :family "Fantasque Sans Mono" :size 20)
+(setq doom-font (font-spec :family "Fantasque Sans Mono" :size 24)
       doom-big-font (font-spec :family "Fantasque Sans Mono" :size 22)
       doom-variable-pitch-font (font-spec :family "Roboto Slab" :size 16)
       doom-serif-font (font-spec :family "Roboto Slab")

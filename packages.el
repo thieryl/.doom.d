@@ -55,3 +55,4 @@
 (package! forge)
 (package! org-bullets)
 (package! github)
+(package! magithub)

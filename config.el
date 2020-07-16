@@ -68,7 +68,7 @@
 
 (load! "t10.custom.el" doom-private-dir)
 (load! "my-agenda.el" doom-private-dir)
-;;(load! "org-mode.custom.el" doom-private-dir)
+;;(load! "org-custom-todo.el" doom-private-dir)
 ;;(load! "org-bullets.el" doom-private-dir)
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -99,7 +99,7 @@
  '(org-startup-indented t)
  '(package-selected-packages
    (quote
-    (htmlize org-pdfview pdf-tools atomic-chrome mingus simple-mpc pcre2el ag wgrep-ag wgrep haskell-mode aggressive-indent treemacs-projectile treemacs origami dumb-jump clj-refactor cider ggtags git-timemachine git-gutter magit hydra default-text-scale smartparens projectile auctex dired-subtree dired-narrow tern-auto-complete tern js2-refactor ac-js2 js2-mode emmet-mode web-mode iedit expand-region multiple-cursors hungry-delete beacon virtualenvwrapper elpy flycheck doom-modeline doom-themes tao-theme poet-theme faff-theme zerodark-theme alect-themes moe-theme base16-theme zenburn-theme color-theme-modern irony-eldoc company-irony company-jedi company counsel ace-window noflet org-bullets which-key posframe try edit-server-htmlize ox-reveal org-re-reveal emms)))
+    (forge htmlize org-pdfview pdf-tools atomic-chrome mingus simple-mpc pcre2el ag wgrep-ag wgrep haskell-mode aggressive-indent treemacs-projectile treemacs origami dumb-jump clj-refactor cider ggtags git-timemachine git-gutter magit hydra default-text-scale smartparens projectile auctex dired-subtree dired-narrow tern-auto-complete tern js2-refactor ac-js2 js2-mode emmet-mode web-mode iedit expand-region multiple-cursors hungry-delete beacon virtualenvwrapper elpy flycheck doom-modeline doom-themes tao-theme poet-theme faff-theme zerodark-theme alect-themes moe-theme base16-theme zenburn-theme color-theme-modern irony-eldoc company-irony company-jedi company counsel ace-window noflet org-bullets which-key posframe try edit-server-htmlize ox-reveal org-re-reveal emms)))
  '(rustic-ansi-faces
    ["#282c34" "#ff6c6b" "#98be65" "#ECBE7B" "#51afef" "#c678dd" "#46D9FF" "#bbc2cf"]))
 
@@ -116,3 +116,4 @@
 ;;(org-babel-load-file (expand-file-name "myinit.org" doom-private-dir))
 (beacon-mode t)
 (setq beacon-color "orange")
+(setq auth-source "~/.authinfo")

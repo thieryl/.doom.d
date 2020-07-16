@@ -52,3 +52,6 @@
 (package! yasnippet)
 (package! beacon)
 (package! ox-reveal)
+(package! forge)
+(package! org-bullets)
+(package! github)

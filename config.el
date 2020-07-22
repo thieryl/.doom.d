@@ -116,4 +116,4 @@
 ;;(org-babel-load-file (expand-file-name "myinit.org" doom-private-dir))
 (beacon-mode t)
 (setq beacon-color "orange")
-(setq auth-source "~/.doomd.d/authinfo.gpg")
+(setq auth-source "~/.authinfo.gpg")

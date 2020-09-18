@@ -25,7 +25,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-vibrant)
+(setq doom-theme 'doom-Iosvkem)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -116,4 +116,8 @@
 ;;(org-babel-load-file (expand-file-name "myinit.org" doom-private-dir))
 (beacon-mode t)
 (setq beacon-color "orange")
-(setq auth-source "~/.authinfo")
+(setq auth-sources '("~/.authinfo.gpg"))
+;; Remove useless whitespace before saving a file
+(add-hook 'before-save-hook 'whitespace-cleanup)
+(add-hook 'before-save-hook (lambda() (delete-trailing-whitespace)))
+;;(add-to-list 'forge-alist '("git.tricky-bit.info/api/v1" forge-gitlab-repository))
